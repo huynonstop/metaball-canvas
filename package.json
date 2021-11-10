@@ -2,7 +2,7 @@
   "name": "metaball-canvas",
   "version": "1.0.0",
   "description": "A project inspired by this [video](https://www.youtube.com/watch?v=6oMZb3yP_H8&t=1489s)",
-  "main": "dist/index.js",
+  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huynonstop/metaball-canvas.git"
