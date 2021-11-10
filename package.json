@@ -1,0 +1,31 @@
+{
+  "name": "metaball-canvas",
+  "version": "1.0.0",
+  "description": "A project inspired by this [video](https://www.youtube.com/watch?v=6oMZb3yP_H8&t=1489s)",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huynonstop/metaball-canvas.git"
+  },
+  "keywords": [
+    "canvas",
+    "typescript"
+  ],
+  "author": "huynonstop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huynonstop/metaball-canvas/issues"
+  },
+  "homepage": "https://github.com/huynonstop/metaball-canvas#readme",
+  "scripts": {
+    "build": "tsc",
+    "serve": "live-server --host=localhost",
+    "dev": "concurrently \"tsc -w\"  \"live-server --host=localhost --watch=dist\""
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "live-server": "^1.2.1",
+    "typescript": "4.3.5"
+  },
+  "dependencies": {}
+}
