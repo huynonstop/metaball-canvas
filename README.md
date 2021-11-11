@@ -1,6 +1,6 @@
 # Metaball Canvas
 
-A project inspired by this [video](https://www.youtube.com/watch?v=6oMZb3yP_H8&t=1489s)
+A project inspired by this [video](https://www.youtube.com/watch?v=6oMZb3yP_H8)
 
 ## References Resources
 
