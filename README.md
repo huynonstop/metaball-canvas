@@ -2,6 +2,8 @@
 
 A project inspired by this [video](https://www.youtube.com/watch?v=6oMZb3yP_H8)
 
+Live demo: [here](https://huynonstop.github.io/metaball-canvas/)
+
 ## References Resources
 
 ### Web Graphic
