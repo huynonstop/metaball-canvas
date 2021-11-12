@@ -20,12 +20,16 @@
   "scripts": {
     "build": "tsc",
     "serve": "live-server --host=localhost",
-    "dev": "concurrently \"tsc -w\"  \"live-server --host=localhost --watch=dist\""
+    "dev": "cp index.html dist && cp index.css dist && cd dist && concurrently \"tsc -w\"  \"live-server --host=localhost --watch=dist\"",
+    "predeploy": "cp index.html dist && cp index.css dist && yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "concurrently": "^6.3.0",
     "live-server": "^1.2.1",
-    "typescript": "4.3.5"
+    "typescript": "4.3.5",
+    "gh-pages": "^3.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }
