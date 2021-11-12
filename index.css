@@ -4,4 +4,10 @@ body {
 
 #container {
   display: flex;
+  gap: 5px;
+}
+
+.btn-grp {
+  display: flex;
+  gap: 5px;
 }

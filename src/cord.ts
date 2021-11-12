@@ -1,5 +1,3 @@
-import { ColorRGB, createRGB, randomRGB } from "./color.js";
-
 export const getIndexAndOffset = (w: number, h: number, imgData: ImageData) => {
   const index = w * imgData.width + h;
   const offset = index * 4;
@@ -42,19 +40,28 @@ export const createCircle = (pos: Point, r: number): Circle => {
   };
 };
 
-export const moveCircle = (circle: Circle, imgData: ImageData) => {
+export const moveCircle = (circle: Circle, boundW: number, BoundH: number) => {
   const { x, y } = circle.pos;
   const [vx, vy] = circle.v;
 
   const newX = x + vx;
   const newY = y + vy;
   const newPos = createPoint(newX, newY);
-  if (newX + circle.r > imgData.width || newX - circle.r < 0) {
+  if (newX + circle.r > boundW || newX - circle.r < 0) {
     circle.v[0] *= -1;
   }
-  if (newY + circle.r > imgData.height || newY - circle.r < 0) {
+  if (newY + circle.r > BoundH || newY - circle.r < 0) {
     circle.v[1] *= -1;
   }
   circle.pos = newPos;
   return circle;
+};
+
+export const circlesInverseDistance = (circles: Circle[], p: Point) => {
+  let id = 0;
+  for (let circle of circles) {
+    const dist = getDistance(p, circle.pos);
+    id += circle.r / dist;
+  }
+  return id;
 };
