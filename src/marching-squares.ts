@@ -154,7 +154,7 @@ const linearInterpolation = (
   fx0: number,
   fx1: number
 ) => {
-  return x0 + ((1 - fx0) * (x1 - x0)) / (fx1 - fx0);
+  return Math.floor(x0 + ((1 - fx0) * (x1 - x0)) / (fx1 - fx0));
 };
 
 const countourPoint = (
