@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/huynonstop/metaball-canvas#readme",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp index.html dist && cp index.css dist",
     "serve": "cd dist && live-server --host=localhost",
-    "dev": "cp index.html dist && cp index.css dist && cd dist && concurrently \"tsc -w\"  \"live-server --host=localhost --watch=dist\"",
-    "predeploy": "cp index.html dist && cp index.css dist && yarn build",
+    "dev": "concurrently \"tsc -w\"  \"cp index.html dist && cp index.css dist && cd dist && live-server --host=localhost --watch=.\"",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
