@@ -20,7 +20,7 @@
   "scripts": {
     "build": "tsc && cp index.html dist && cp index.css dist",
     "serve": "cd dist && live-server --host=localhost",
-    "dev": "concurrently \"tsc -w\"  \"cp index.html dist && cp index.css dist && cd dist && live-server --host=localhost --watch=.\"",
+    "dev": " cp index.html dist && cp index.css dist && concurrently \"tsc -w\"  \"cd dist && live-server --host=localhost --watch=.\"",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
