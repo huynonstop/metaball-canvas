@@ -4,6 +4,18 @@ A project inspired by this [video](https://www.youtube.com/watch?v=6oMZb3yP_H8)
 
 Live demo: [here](https://huynonstop.github.io/metaball-canvas/)
 
+## Project structure
+
+```text
+-src
+| |-index.ts: entry point, init things and draw canvas
+| |-config.ts: configuration for canvas, feel free to tweak here
+| |-marching-squares.ts: my 2d marching squares implementation
+| |-canvas.ts: some functions to draw in canvas
+| |_other utils function
+|___
+```
+
 ## References Resources
 
 ### Web Graphic
