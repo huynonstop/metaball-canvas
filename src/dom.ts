@@ -10,6 +10,7 @@ export const createCanvas = (
   const canvas = document.createElement("canvas");
   canvas.height = H;
   canvas.width = W;
+  canvas.style.cursor = "pointer";
   container.appendChild(canvas);
   return canvas;
 };
@@ -22,11 +23,6 @@ export const createControllerGroup = (container: HTMLElement) => {
   pButton.textContent = "Pause";
   pButton.style.height = "40px";
   buttonGroup.appendChild(pButton);
-
-  const dbButton = document.createElement("button");
-  dbButton.textContent = "Debug";
-  dbButton.style.height = "40px";
-  buttonGroup.appendChild(dbButton);
 
   const rsButton = document.createElement("button");
   rsButton.textContent = "Reset";
@@ -47,6 +43,11 @@ export const createControllerGroup = (container: HTMLElement) => {
   popButton.textContent = "Pop";
   popButton.style.height = "40px";
   buttonGroup.appendChild(popButton);
+
+  const dbButton = document.createElement("button");
+  dbButton.textContent = "Debug";
+  dbButton.style.height = "40px";
+  buttonGroup.appendChild(dbButton);
 
   container.appendChild(buttonGroup);
   return {
