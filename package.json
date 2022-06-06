@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/huynonstop/metaball-canvas/issues"
   },
-  "homepage": "https://huynonstop.github.io/metaball-canvas/",
   "scripts": {
     "dev": "vite --open",
     "build": "tsc && vite build",
