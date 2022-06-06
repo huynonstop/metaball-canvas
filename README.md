@@ -2,7 +2,7 @@
 
 A project inspired by this [video](https://www.youtube.com/watch?v=6oMZb3yP_H8)
 
-Live demo: [here](https://huynonstop.github.io/metaball-canvas/)
+Live demo: [here](https://metaball-canvas.netlify.app/)
 
 ## Project structure
 
@@ -17,6 +17,10 @@ Live demo: [here](https://huynonstop.github.io/metaball-canvas/)
 ```
 
 ## References Resources
+
+### requestAnimationFrame
+
+<https://stackoverflow.com/questions/66323325/canvas-is-drawing-with-inconsistent-speed-requestanimationframe>
 
 ### Web Graphic
 
