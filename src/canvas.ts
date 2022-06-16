@@ -75,8 +75,8 @@ export const pixelsDraw: Drawer = (ctx, circles, options) => {
   const imgData = ctx.getImageData(0, 0, W, H);
   const pixels = imgData.data;
 
-  if (options.debugGrid && options.step) {
-    drawDebugGrid(pixels, W, H, options.step);
+  if (options.debugGrid && options.debugStep) {
+    drawDebugGrid(pixels, W, H, options.debugStep);
   }
 
   for (let h = 0; h < H; h += 1) {
@@ -108,8 +108,8 @@ export const marchingSquaresDraw: Drawer = (
   const imgData = ctx.getImageData(0, 0, W, H);
   const pixels = imgData.data;
 
-  if (options.debugGrid && step) {
-    drawDebugGrid(pixels, W, H, step);
+  if (options.debugGrid && options.debugStep) {
+    drawDebugGrid(pixels, W, H, options.debugStep);
     ctx.putImageData(imgData, 0, 0);
   }
 
